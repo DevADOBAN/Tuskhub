@@ -5,7 +5,6 @@ from selenium.common.exceptions import TimeoutException
 class BasePage:
     """
     Classe base para todas as Páginas (Page Objects).
-    Contém métodos utilitários comuns.
     """
     
     def __init__(self, driver, base_url="http://127.0.0.1:5000/"):
@@ -50,4 +49,5 @@ class BasePage:
             self.find_element(locator, timeout)
             return True
         except:
+
             return False
