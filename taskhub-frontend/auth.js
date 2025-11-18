@@ -1,7 +1,5 @@
-// auth.js CORRIGIDO — Garantido para funcionar com seu backend Flask + JWT
 document.addEventListener("DOMContentLoaded", () => {
 
-    // URL base CONSISTENTE com o backend
     const API_URL = "http://127.0.0.1:5000/";
 
     const loginForm = document.getElementById("login-form");
@@ -16,9 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    // =============================
-    // LOGIN
-    // =============================
+    // === LOGIN === ///
     if (loginForm) {
         loginForm.addEventListener("submit", async (e) => {
             e.preventDefault();
@@ -65,9 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    // =============================
-    // SIGNUP (CADASTRO)
-    // =============================
+    // === CADASTRO === //
     if (signupForm) {
         signupForm.addEventListener("submit", async (e) => {
             e.preventDefault();
@@ -112,3 +106,4 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 });
+
